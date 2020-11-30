@@ -38,12 +38,13 @@ $(document).ready(
 
 
     // AGGANCIO ALLA PRESSIONE DELL'INVIO
-    $("input").keydown(
+    $("#text").keydown(
       function (event){
-        console.log(event.keyCode);
+        // SE PREMO INVIO
         if (event.keyCode == 13) {
+          // PRENDI IL TESTO CONTENUTO NEL CAMPO INPUT
           var newText = $("input").val()
-          console.log(newText);
+          // AGGIUNGI IL TESTO CONTENUTO IN INPUT NELLA UL
           var context = {
             text: newText
           };
@@ -55,6 +56,21 @@ $(document).ready(
       }
     );
 
+    // $("#submit").click(
+    //   function (event){
+    //     // PRENDI IL TESTO CONTENUTO NEL CAMPO INPUT
+    //     var newText = $("#text").val()
+    //     // AGGIUNGI IL TESTO CONTENUTO IN INPUT NELLA UL
+    //     var context = {
+    //       text: newText
+    //       //GENERO GLI ELEMENTI NEL HTML
+    //       var html = template(context);
+    //       //AGGIUNGO IL MIO CONTENUTO ALL'HTML
+    //       $("#todo").append(html);
+    //     }
+    //   }
+    // );
+
     // RENDO LA X CLICCABILE
     $(document).on("click", ".delete",
       function () {
@@ -62,10 +78,5 @@ $(document).ready(
         $(this).parent().remove();
       }
     );
-
-
-
-
-
   }
 );
