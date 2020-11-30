@@ -52,6 +52,7 @@ $(document).ready(
           var html = template(context);
           //AGGIUNGO IL MIO CONTENUTO ALL'HTML
           $("#todo").append(html);
+          $(this).val('');
         }
       }
     );
@@ -68,8 +69,10 @@ $(document).ready(
         var html = template(context);
         // SCRIVILO
         $("#todo").append(html);
+        $("#text").val('');
       }
     );
+
 
     // RENDO LA X CLICCABILE
     $(document).on("click", ".delete",
