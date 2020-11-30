@@ -30,5 +30,9 @@ ul li {
 
 span {
   cursor: pointer;
+}
 
+
+.red {
+  background-color: red;
 }

@@ -82,5 +82,16 @@ $(document).ready(
         $(this).remove();
       }
     );
+
+    $("span").mouseenter(
+      function () {
+        $(this).prev().addClass("red");
+      }
+    )
+    $("span").mouseleave(
+      function () {
+        $(this).prev().removeClass("red");
+      }
+    )
   }
 );
