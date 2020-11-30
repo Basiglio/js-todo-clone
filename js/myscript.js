@@ -5,6 +5,7 @@
 $(document).ready(
   function () {
 
+    // GENERO ARRAY LISTA
     var list = [
       "Fare la spesa",
       "Fare i compiti",
@@ -25,8 +26,10 @@ $(document).ready(
       };
       //GENERO GLI ELEMENTI NEL HTML
       var html = template(context);
+      //AGGIUNGO I MIEI <LI> DENTRO <UL>
+      $("todo").append(html);
     }
+  }
 
-    //POSIZIONO I MIEI <LI> DENTRO <UL>
-    $("todo").append(html);
-});
+
+);
