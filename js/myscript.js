@@ -73,7 +73,6 @@ $(document).ready(
       }
     );
 
-
     // RENDO LA X CLICCABILE
     $(document).on("click", ".delete",
       function () {
@@ -83,15 +82,6 @@ $(document).ready(
       }
     );
 
-    $("span").mouseenter(
-      function () {
-        $(this).prev().addClass("red");
-      }
-    )
-    $("span").mouseleave(
-      function () {
-        $(this).prev().removeClass("red");
-      }
-    )
-  }
+
+   }
 );
