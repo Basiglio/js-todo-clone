@@ -11,11 +11,11 @@ $(document).ready(
       "Fare i compiti",
       "Fare il bucato",
       "Dormire",
-      "Pagare le bollette"
+      "Pagare le bollette",
     ];
 
     // COMPILO HANDLEBARS
-    var source = $("#entry-template").html();
+    var source = document.getElementById("entry-template").innerHTML;
     var template = Handlebars.compile(source);
 
     // SCORRO NEL MIO ARRAY
@@ -27,7 +27,7 @@ $(document).ready(
       //GENERO GLI ELEMENTI NEL HTML
       var html = template(context);
       //AGGIUNGO I MIEI <LI> DENTRO <UL>
-      $("todo").append(html);
+      $("#todo").append(html);
     }
   }
 
