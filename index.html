@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
     <script src="js/myscript.js" charset="utf-8"></script>
     <title>Handlebars - Todo List</title>
   </head>
   <body>
+    <h1>ToDo List</h1>
     <ul id="todo">
 
     </ul>
 
     <script id="entry-template" type="text/x-handlebars-template">
-      <li>{{text}} <span>X</span></li>
+      <li> {{text}} </li>
     </script>
   </body>
 </html>
