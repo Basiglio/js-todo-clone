@@ -17,6 +17,12 @@ $(document).ready(
     //   "Pagare le bollette",
     // ];
 
+    // COMPILO HANDLEBARS
+    var source = document.getElementById("entry-template").innerHTML;
+    var template = Handlebars.compile(source);
+
+
+    // ESERCIZIO FATTO STAMATTINA
     // // SCORRO NEL MIO ARRAY
     // for (var i = 0; i < list.length; i++) {
     //   // DEFINISCO GLI ELEMENTI CHE VOGLIO GENERARE NEL HTML
@@ -28,11 +34,6 @@ $(document).ready(
     //   //AGGIUNGO I MIEI <LI> DENTRO <UL>
     //   $("#todo").append(html);
     // }
-
-
-    // COMPILO HANDLEBARS
-    var source = document.getElementById("entry-template").innerHTML;
-    var template = Handlebars.compile(source);
 
 
 
