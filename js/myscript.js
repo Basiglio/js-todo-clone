@@ -78,7 +78,8 @@ $(document).ready(
     $(document).on("click", ".delete",
       function () {
         // RIMUOVO IL SUO GENITORE <LI> INSIEME ALLA X <SPAN>
-        $(this).parent().remove();
+        $(this).prev().remove();
+        $(this).remove();
       }
     );
   }
