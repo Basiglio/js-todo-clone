@@ -29,7 +29,18 @@ $(document).ready(
       //AGGIUNGO I MIEI <LI> DENTRO <UL>
       $("#todo").append(html);
     }
+
+    // RENDO LA X CLICCABILE
+    $(".delete").click(
+      function () {
+        // RIMUOVO IL SUO GENITORE <LI> INSIEME ALLA X <SPAN>
+        $(this).parent().remove();
+      }
+    )
+
+
+
+
+
   }
-
-
 );
